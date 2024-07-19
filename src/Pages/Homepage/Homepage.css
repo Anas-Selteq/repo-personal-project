@@ -1,0 +1,72 @@
+.home_page_background {
+    background-image: url(../../../public/images/background_main.png);
+    background-position: center;
+    background-size: 100% 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+}
+
+.font_navigation_text1 {
+    color: #607B96;
+}
+
+
+
+.padding_left_homepgae {
+    padding-left: 17%;
+}
+
+.text_fontname {
+    font-size: 62px;
+}
+
+.text_fontname_career {
+    color: #4D5BCE;
+    font-size: 32px;
+}
+
+.text_fontname_career_github {
+    color: #607B96;
+    font-size: 16px;
+}
+
+.const_text {
+    color: #4D5BCE;
+    font-size: 16px;
+}
+
+.link_text {
+    color: #43D9AD;
+    font-size: 16px;
+}
+
+.link_text_site {
+    color: #E99287;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    .text_fontname_career {
+        color: #43D9AD;
+        font-size: 20px;
+    }
+    .padding_left_homepgae {
+        padding-left: 9%;
+    }
+    .padding_top_mobile
+    {
+        padding-top: 10%;
+    }
+    .home_page_background {
+        background-image: url(../../../public/images/background_main.png);
+        background-position: center;
+        background-size: 210% 100%;
+        height: 100vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        background-repeat: no-repeat;
+        border: 0px solid white;
+    }
+}

@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #FFFFFF;
+}
+
+code {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  color: #FFFFFF;
+}
+
+.universal_cursor {
+  cursor: pointer;
+}
+
+.display_mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .display_mobile {
+    display: block;
+  }
+
+  .display_pc {
+    display: none;
+  }
+}
