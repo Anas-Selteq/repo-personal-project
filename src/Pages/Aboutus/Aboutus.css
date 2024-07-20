@@ -1,0 +1,57 @@
+.background_for_aboutme
+{
+        background-color: #011627;
+        height: 100vh;
+        overflow: hidden;
+}
+
+.width_first_column
+{
+    width: 4%;
+    border-right: 1px solid #1E2D3D;
+    height: 100vh;
+}
+
+.width_second_side
+{
+    width: 12.2%;
+    border-right: 1px solid #1E2D3D;
+    height: 100vh;
+}
+
+.border_bottom_new
+{
+    border-bottom: 1px solid #1E2D3D;
+}
+
+.color_unactive
+{
+    color: #607B96;
+}
+
+.width_third_side
+{
+    width: 84%;
+    border-right: 1px solid #1E2D3D;
+    height: 100vh;
+}
+
+.color_of_unactive
+{
+    color: #607B96;
+}
+
+.border_right_pp
+{
+    border-right: 1px solid #1E2D3D;
+}
+
+.green_color
+{
+    color: #43D9AD;
+}
+
+.purple_color
+{
+    color: #3A49A4;
+}
