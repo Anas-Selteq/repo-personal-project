@@ -8,9 +8,7 @@
     background-repeat: no-repeat;
 }
 
-.font_navigation_text1 {
-    color: #607B96;
-}
+
 
 
 
@@ -47,18 +45,67 @@
     font-size: 16px;
 }
 
+.padding_screen_top {
+    padding-top: 2%;
+}
+
+@media only screen and (min-width: 1080px) and (max-width: 1400px) {
+    .padding_left_homepgae {
+        padding-left: 12% !important;
+    }
+
+    .img_width_med_screen {
+        width: 70%;
+    }
+
+    .padding_screen_top {
+        padding-top: 0%;
+    }
+    .text_fontname {
+        font-size: 50px;
+    }
+    .text_fontname_career {
+        color: #4D5BCE;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1080px) {
+    .padding_left_homepgae {
+        padding-left: 12% !important;
+    }
+
+    .img_width_med_screen {
+        width: 70%;
+    }
+
+    .padding_screen_top {
+        padding-top: 10%;
+    }
+    .text_fontname {
+        font-size: 50px;
+    }
+    .text_fontname_career {
+        color: #4D5BCE;
+        font-size: 20px;
+    }
+}
+
+
 @media only screen and (max-width: 600px) {
     .text_fontname_career {
         color: #43D9AD;
         font-size: 20px;
     }
+
     .padding_left_homepgae {
         padding-left: 9%;
     }
-    .padding_top_mobile
-    {
+
+    .padding_top_mobile {
         padding-top: 10%;
     }
+
     .home_page_background {
         background-image: url(../../../public/images/background_main.png);
         background-position: center;

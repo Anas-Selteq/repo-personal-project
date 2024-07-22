@@ -10,12 +10,29 @@
     border-left: 1.5px solid #1E2D3D;
 }
 
-.text_color_white
-{
+.text_color_white {
     color: #FFFFFF;
 }
 
-.border_bottom_active
-{
+.border_bottom_active {
     border-bottom: 3px solid #FEA55F;
+}
+
+.font_navigation_text1 {
+    color: #607B96;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1400px) {
+    .font_navigation_text1 {
+        color: #607B96;
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1080px) {
+    .font_navigation_text1 {
+        color: #607B96;
+        font-size: 10px;
+    }
 }
