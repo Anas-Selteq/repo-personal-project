@@ -1,26 +1,33 @@
 import React, { useEffect, useState } from 'react'
 import "../HeaderHome/HeaderHome.css"
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 function HeaderHome() {
     const [activebutton, setActivebutton] = useState("")
-    const location = useLocation();
+    const navigate = useNavigate();
+    const location = useLocation()
     useEffect(() => {
         const endpoint = location.pathname.startsWith('/')
             ? location.pathname.substring(1)
             : location.pathname;
         setActivebutton(endpoint)
     }, [location]);
+    const goToHomePage = () => {
+        navigate('/');
+    }
+    const goToAboutPage = () => {
+        navigate('/About-me');
+    }
     return (
         <div className='col-md-12 border_bottom_tag_line'>
             <div className='row universal_cursor display_pc'>
-                <div className='col-md-2 font_navigation_text1 border_tag_right px-5 py-3'>
+                <div className='col-md-2 font_navigation_text1 border_tag_right px-5 py-3' onClick={goToHomePage} >
                     Anas-waqar
                 </div>
-                <div className={`col-md-1 font_navigation_text1 border_tag_right border_tag_left text-center  ${activebutton === "" && "text_color_white border_bottom_active" } py-3`}>
+                <div onClick={goToHomePage} className={`col-md-1 font_navigation_text1 border_tag_right border_tag_left text-center  ${activebutton === "" && "text_color_white border_bottom_active"} py-3`}>
                     _hello
                 </div>
-                <div className={`col-md-1 font_navigation_text1 border_tag_right border_tag_left ${activebutton === "About-me" && "text_color_white border_bottom_active" } text-center py-3`}>
+                <div onClick={goToAboutPage} className={`col-md-1 font_navigation_text1 border_tag_right border_tag_left ${activebutton === "About-me" && "text_color_white border_bottom_active"} text-center py-3`}>
                     _about-me
                 </div>
                 <div className='col-md-1 font_navigation_text1 border_tag_right border_tag_left text-center py-3'>
